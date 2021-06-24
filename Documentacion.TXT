@@ -1,0 +1,20 @@
+La solución presentada esta basada en el lenguaje Java (JDK8) con Java Swing con una base de datos SQlite normalizada (3 forma normal), 
+es una aplicación practica que resuelve los problemas planteados, sin embargo y previendo posibles cambios en un futuro, 
+desde la base de datos hasta la aplicación esta diseñado para ir agregando elementos y requerimientos sin afectar su estructura.
+
+La aplicación cuenta con tres módulos (Ingresos, Egresos e almacén)
+Ingresos permite al usuario agregar nuevos productos al almacén, se llenan los 9 campos (Los campos están validados para admitir solo números o letras) y se agrega el registro
+Egresos permite al usuario seleccionar las características del producto dejando solo la cantidad a escribir para el egreso.
+Almacén permite al usuario realizar búsquedas mas especificas de un producto deseado con base a una o varias características.
+
+
+Los requerimientos necesarios para correr la aplicación es tener SQlite y Java. (Abrir Castores.Jar Lnzara la aplicación)
+La carpeta “Lib” y los archivos “Castores.Jar” y “Tazas.db” tienen que estar en una misma carpeta para el funcionamiento 
+(Castores.rar contiene todo el proyecto para ser abierto en NetBeans u otro IDE además del instalador SQLite para Windows 64Bit).
+Si se desea correr desde NetBeans es vital agregar el JAR “sqlite-jdbc-3.34.0” a las librerías. 
+
+El Proyecto cuenta con 4 paquetes
+Paquete “Datos” contiene todas las clases esenciales para cada tabla a utilizarse.
+Paquete “Imagenes.iconos” contiene los iconos.
+Paquete “Interfaces” contiene las interfaces graficas del proyecto, conformada por la ventana principal 3 módulos.
+Paquete “Tablas” contiene una clase por cada atabla que permite la manipulación en conjunto de la información mostrada en la interfaz.
